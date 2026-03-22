@@ -17,7 +17,7 @@ namespace ConOOD_RpgGame
         public int Aggression { get; }
         public int Wisdom { get; }
 
-        public List<Item> Inventory { get; }
+        public List<Item> Inventory { get; } //inventoryde bulunanlar 
 
         public Item LeftHandItem { get; private set; }
         public Item RightHandItem { get; private set; }
@@ -53,7 +53,7 @@ namespace ConOOD_RpgGame
         {
             Inventory.Add(item);
         }
-
+        //worldden geliyo canenter ispassable etc.
         public bool Move(World world, int dRow, int dCol, out string message)
         {
             Position newPosition = Position.Offset(dRow, dCol);
@@ -75,7 +75,8 @@ namespace ConOOD_RpgGame
             return true;
         }
 
-        public bool PickUpTopItem(World world, out string message)
+        public bool PickUpTopItem(World world, out string message) //oyuncunun bulunduğu hücre alınır item var mı bakılır 
+                                                                   // üstteki item alınır ve item kendi pickup davranışını uygular
         {
             Cell cell = world.GetCell(Position);
 
@@ -90,7 +91,7 @@ namespace ConOOD_RpgGame
 
             if (!success)
             {
-                cell.AddItem(item);
+                cell.AddItem(item);//yere bırakır 
             }
 
             return success;
@@ -104,7 +105,7 @@ namespace ConOOD_RpgGame
                 return false;
             }
 
-            Item item = Inventory[inventoryIndex];
+            Item item = Inventory[inventoryIndex]; //first it drops from incentory
 
             UnequipItemIfNeeded(item);
 
@@ -115,7 +116,8 @@ namespace ConOOD_RpgGame
             return true;
         }
 
-        public bool EquipItem(int inventoryIndex, HandSide handSide, out string message)
+        public bool EquipItem(int inventoryIndex, HandSide handSide, out string message) //karar itemin kendisine bıırakılır junitem equip olamaz coin olamaz ama 
+                                                                                         //weapon olabilir
         {
             if (inventoryIndex < 0 || inventoryIndex >= Inventory.Count)
             {
@@ -156,7 +158,7 @@ namespace ConOOD_RpgGame
                 return true;
             }
 
-            if (HasTwoHandedWeaponEquipped())
+            if (HasTwoHandedWeaponEquipped())//zaten two handedn silah var başka takamaz 
             {
                 message = "Unequip the two-handed weapon first.";
                 return false;
@@ -234,12 +236,12 @@ namespace ConOOD_RpgGame
             return true;
         }
 
-        private bool HasTwoHandedWeaponEquipped()
+        private bool HasTwoHandedWeaponEquipped() //two handed logic eğer iki elde aynı item varsa 
         {
             return LeftHandItem != null && LeftHandItem == RightHandItem;
         }
 
-        private void UnequipItemIfNeeded(Item item)
+        private void UnequipItemIfNeeded(Item item) //helper met drop yapılınca elleri temizler
         {
             if (LeftHandItem == item && RightHandItem == item)
             {

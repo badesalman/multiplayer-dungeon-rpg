@@ -1,20 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace ConOOD_RpgGame
 {
     public class Renderer
     {
-        public void Render(World world, Player player, string message)
+        public void Render(World world, Player player, string instructions, string message)
         {
             StringBuilder sb = new StringBuilder();
+            int renderWidth = 90;
 
-            sb.AppendLine("=== STAGE 1 RPG GAME ===");
-            sb.AppendLine("Controls: W A S D = move | E = pick up | I = inventory menu | X = exit");
-            sb.AppendLine();
+            sb.AppendLine(PadLine("=== STAGE 2 RPG GAME ===", renderWidth));
+            sb.AppendLine(PadLine($"Controls: {instructions}", renderWidth));
+            sb.AppendLine(PadLine(string.Empty, renderWidth));
 
             for (int row = 0; row < World.Rows; row++)
             {
@@ -29,11 +27,11 @@ namespace ConOOD_RpgGame
 
                     if (player.Position.Row == row && player.Position.Col == col)
                     {
-                        symbolToDraw = '@';
+                        symbolToDraw = '¶';
                     }
                     else if (cell.HasItems())
                     {
-                        symbolToDraw = cell.PeekTopItem().Symbol;
+                        symbolToDraw = cell.PeekTopItem()!.Symbol;
                     }
                     else
                     {
@@ -64,11 +62,21 @@ namespace ConOOD_RpgGame
                 else if (row == 19)
                     line.Append($"    MSG: {message}");
 
-                sb.AppendLine(line.ToString());
+                sb.AppendLine(PadLine(line.ToString(), renderWidth));
             }
 
             Console.SetCursorPosition(0, 0);
             Console.Write(sb.ToString());
+        }
+
+        private string PadLine(string text, int width)
+        {
+            if (text.Length >= width)
+            {
+                return text;
+            }
+
+            return text.PadRight(width);
         }
 
         private string GetInventoryLine(Player player, int index)
@@ -81,7 +89,7 @@ namespace ConOOD_RpgGame
             return $"    {index + 1}. {player.Inventory[index].GetDisplayText()}";
         }
 
-        private string GetHandText(Item item)
+        private string GetHandText(Item? item)
         {
             return item == null ? "(empty)" : item.GetDisplayText();
         }
@@ -95,7 +103,7 @@ namespace ConOOD_RpgGame
                 return "Nothing";
             }
 
-            return cell.PeekTopItem().GetDetailedInfo();
+            return cell.PeekTopItem()!.GetDetailedInfo();
         }
     }
 }

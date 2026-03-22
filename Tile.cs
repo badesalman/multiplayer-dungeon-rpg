@@ -19,7 +19,7 @@ namespace ConOOD_RpgGame
     public class WallTile : Tile
     {
         // ekranda blok gibi görünür oyuncu içinden geçemez
-        public override char Symbol => '#';
+        public override char Symbol => '█';
         public override bool IsPassable => false;
     }
 }

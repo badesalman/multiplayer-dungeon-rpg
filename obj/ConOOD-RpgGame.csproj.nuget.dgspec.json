@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bades\\source\\repos\\ConOOD-RpgGame\\ConOOD-RpgGame\\ConOOD-RpgGame.csproj": {}
+    "C:\\Users\\bades\\project_salman_bade\\ConOOD-RpgGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bades\\source\\repos\\ConOOD-RpgGame\\ConOOD-RpgGame\\ConOOD-RpgGame.csproj": {
+    "C:\\Users\\bades\\project_salman_bade\\ConOOD-RpgGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bades\\source\\repos\\ConOOD-RpgGame\\ConOOD-RpgGame\\ConOOD-RpgGame.csproj",
+        "projectUniqueName": "C:\\Users\\bades\\project_salman_bade\\ConOOD-RpgGame.csproj",
         "projectName": "ConOOD-RpgGame",
-        "projectPath": "C:\\Users\\bades\\source\\repos\\ConOOD-RpgGame\\ConOOD-RpgGame\\ConOOD-RpgGame.csproj",
+        "projectPath": "C:\\Users\\bades\\project_salman_bade\\ConOOD-RpgGame.csproj",
         "packagesPath": "C:\\Users\\bades\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bades\\source\\repos\\ConOOD-RpgGame\\ConOOD-RpgGame\\obj\\",
+        "outputPath": "C:\\Users\\bades\\project_salman_bade\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

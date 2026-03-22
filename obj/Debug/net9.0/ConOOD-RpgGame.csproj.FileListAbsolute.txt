@@ -12,3 +12,17 @@ C:\Users\bades\source\repos\ConOOD-RpgGame\ConOOD-RpgGame\obj\Debug\net9.0\refin
 C:\Users\bades\source\repos\ConOOD-RpgGame\ConOOD-RpgGame\obj\Debug\net9.0\ConOOD-RpgGame.pdb
 C:\Users\bades\source\repos\ConOOD-RpgGame\ConOOD-RpgGame\obj\Debug\net9.0\ConOOD-RpgGame.genruntimeconfig.cache
 C:\Users\bades\source\repos\ConOOD-RpgGame\ConOOD-RpgGame\obj\Debug\net9.0\ref\ConOOD-RpgGame.dll
+C:\Users\bades\project_salman_bade\bin\Debug\net9.0\ConOOD-RpgGame.exe
+C:\Users\bades\project_salman_bade\bin\Debug\net9.0\ConOOD-RpgGame.deps.json
+C:\Users\bades\project_salman_bade\bin\Debug\net9.0\ConOOD-RpgGame.runtimeconfig.json
+C:\Users\bades\project_salman_bade\bin\Debug\net9.0\ConOOD-RpgGame.dll
+C:\Users\bades\project_salman_bade\bin\Debug\net9.0\ConOOD-RpgGame.pdb
+C:\Users\bades\project_salman_bade\obj\Debug\net9.0\ConOOD-RpgGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bades\project_salman_bade\obj\Debug\net9.0\ConOOD-RpgGame.AssemblyInfoInputs.cache
+C:\Users\bades\project_salman_bade\obj\Debug\net9.0\ConOOD-RpgGame.AssemblyInfo.cs
+C:\Users\bades\project_salman_bade\obj\Debug\net9.0\ConOOD-RpgGame.csproj.CoreCompileInputs.cache
+C:\Users\bades\project_salman_bade\obj\Debug\net9.0\ConOOD-RpgGame.dll
+C:\Users\bades\project_salman_bade\obj\Debug\net9.0\refint\ConOOD-RpgGame.dll
+C:\Users\bades\project_salman_bade\obj\Debug\net9.0\ConOOD-RpgGame.pdb
+C:\Users\bades\project_salman_bade\obj\Debug\net9.0\ConOOD-RpgGame.genruntimeconfig.cache
+C:\Users\bades\project_salman_bade\obj\Debug\net9.0\ref\ConOOD-RpgGame.dll
