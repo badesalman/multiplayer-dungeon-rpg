@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConOOD-RpgGame")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07a9bc4e68b9f7a994474c1a6c8b2e6d1c603193")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b5263c0de2d65af8e85f0438fe1891b9589e8aa")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConOOD-RpgGame")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConOOD-RpgGame")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
