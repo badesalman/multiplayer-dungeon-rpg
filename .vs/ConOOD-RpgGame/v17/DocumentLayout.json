@@ -3,40 +3,172 @@
   "WorkspaceRootPath": "C:\\Users\\bades\\project_salman_bade\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\enums\\handside.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\enums\\handside.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\renderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:renderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\mapentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\mapentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\emptydungeonstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:emptydungeonstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\iattackable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\iattackable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\additemstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:additemstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\addweaponsstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:addweaponsstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\rendering\\renderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\rendering\\renderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\magicalweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\magicalweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\lightweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\lightweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\junkitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\junkitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\heavyweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\heavyweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\currencyitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\currencyitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\modifiers\\unluckymodifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\modifiers\\unluckymodifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\modifiers\\strongmodifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\modifiers\\strongmodifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\modifiers\\itemmodifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\modifiers\\itemmodifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\builders\\instructionbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\builders\\instructionbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\builders\\ibuildstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\builders\\ibuildstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\builders\\addweaponsstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\builders\\addweaponsstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\builders\\addpathsstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\builders\\addpathsstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\builders\\additemstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\builders\\additemstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\builders\\addchambersstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\builders\\addchambersstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\builders\\addcentralroomstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\builders\\addcentralroomstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\builders\\dungeon\\idungeonstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\builders\\dungeon\\idungeonstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\builders\\dungeon\\filleddungeonstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\builders\\dungeon\\filleddungeonstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\builders\\dungeon\\emptydungeonstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\builders\\dungeon\\emptydungeonstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\builders\\dungeon\\dungeongroundsstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\builders\\dungeon\\dungeongroundsstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\builders\\dungeon\\dungeonbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\builders\\dungeon\\dungeonbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\items\\builders\\dungeon\\addenemiesstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\items\\builders\\dungeon\\addenemiesstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\combat\\stealthattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\combat\\stealthattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\combat\\magicalattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\combat\\magicalattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\combat\\combatsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\combat\\combatsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\combat\\attackstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\combat\\attackstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\controllers\\keyboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\controllers\\keyboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|c:\\users\\bades\\project_salman_bade\\world\\entities\\core\\combat\\normalattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DF5275C-3EDE-8FE7-52DF-D266D498CE50}|ConOOD-RpgGame.csproj|solutionrelative:world\\entities\\core\\combat\\normalattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,123 +178,560 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\Game.cs",
-              "RelativeDocumentMoniker": "Game.cs",
-              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\Game.cs",
-              "RelativeToolTip": "Game.cs",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAUwLIAAAABAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "Position.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Position.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Position.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Position.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Position.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-22T21:21:01.355Z",
+              "WhenOpened": "2026-04-09T19:32:47.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Program.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Program.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Program.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T19:36:32.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Cell.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Cell.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Cell.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Cell.cs",
+              "RelativeToolTip": "World\\Entities\\Cell.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwDcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T19:34:11.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Character.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Character.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Character.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Character.cs",
+              "RelativeToolTip": "World\\Entities\\Character.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T00:01:44.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Enemy.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Enemy.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Enemy.cs",
+              "RelativeToolTip": "World\\Entities\\Enemy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T00:01:58.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAttackable.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\IAttackable.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\IAttackable.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\IAttackable.cs",
+              "RelativeToolTip": "World\\Entities\\IAttackable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T00:01:27.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MapEntity.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\MapEntity.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\MapEntity.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\MapEntity.cs",
+              "RelativeToolTip": "World\\Entities\\MapEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T00:01:05.281Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Weapon.cs",
-              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\Weapon.cs",
-              "RelativeDocumentMoniker": "Weapon.cs",
-              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\Weapon.cs",
-              "RelativeToolTip": "Weapon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-22T21:19:16.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "World.cs",
-              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World.cs",
-              "RelativeDocumentMoniker": "World.cs",
-              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World.cs",
-              "RelativeToolTip": "World.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-22T21:18:25.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\Player.cs",
-              "RelativeDocumentMoniker": "Player.cs",
-              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\Player.cs",
-              "RelativeToolTip": "Player.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAowAgBAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Player.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Player.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Player.cs",
+              "RelativeToolTip": "World\\Entities\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-22T21:17:07.18Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "Tile.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Tile.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Tile.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Tile.cs",
+              "RelativeToolTip": "World\\Entities\\Tile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T21:19:18.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HandSide.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Enums\\HandSide.cs",
+              "RelativeDocumentMoniker": "World\\Enums\\HandSide.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Enums\\HandSide.cs",
+              "RelativeToolTip": "World\\Enums\\HandSide.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T19:34:08.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "World.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\World.cs",
+              "RelativeDocumentMoniker": "World\\World.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\World.cs",
+              "RelativeToolTip": "World\\World.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAADwv14AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T21:18:25.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Game.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Game.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Game.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Game.cs",
+              "ViewState": "AgIAANcAAAAAAAAAAAAAAO0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T21:21:01.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Renderer.cs",
-              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\Renderer.cs",
-              "RelativeDocumentMoniker": "Renderer.cs",
-              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\Renderer.cs",
-              "RelativeToolTip": "Renderer.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAUwGwAAAABAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Rendering\\Renderer.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Rendering\\Renderer.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Rendering\\Renderer.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Rendering\\Renderer.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAAJ8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-22T21:19:34.411Z",
+              "WhenOpened": "2026-04-11T00:50:18.266Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EmptyDungeonStep.cs",
-              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\EmptyDungeonStep.cs",
-              "RelativeDocumentMoniker": "EmptyDungeonStep.cs",
-              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\EmptyDungeonStep.cs",
-              "RelativeToolTip": "EmptyDungeonStep.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "Weapon.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Weapon.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\Weapon.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Weapon.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\Weapon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-22T21:19:30.717Z",
+              "WhenOpened": "2026-03-22T21:19:16.536Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AddItemStep.cs",
-              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\AddItemStep.cs",
-              "RelativeDocumentMoniker": "AddItemStep.cs",
-              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\AddItemStep.cs",
-              "RelativeToolTip": "AddItemStep.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "MagicalWeapon.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\MagicalWeapon.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\MagicalWeapon.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\MagicalWeapon.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\MagicalWeapon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-22T21:19:28.638Z",
+              "WhenOpened": "2026-04-11T00:16:28.88Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
+              "Title": "LightWeapon.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\LightWeapon.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\LightWeapon.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\LightWeapon.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\LightWeapon.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T00:16:12.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "JunkItem.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\JunkItem.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\JunkItem.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\JunkItem.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\JunkItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T19:33:52.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Item.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\Item.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Item.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\Item.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAkwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T19:33:51.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "HeavyWeapon.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\HeavyWeapon.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\HeavyWeapon.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\HeavyWeapon.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\HeavyWeapon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T00:16:00.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CurrencyItems.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\CurrencyItems.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\CurrencyItems.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\CurrencyItems.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\CurrencyItems.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T19:33:53.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UnluckyModifier.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Modifiers\\UnluckyModifier.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\Modifiers\\UnluckyModifier.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Modifiers\\UnluckyModifier.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\Modifiers\\UnluckyModifier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T00:19:36.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "StrongModifier.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Modifiers\\StrongModifier.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\Modifiers\\StrongModifier.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Modifiers\\StrongModifier.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\Modifiers\\StrongModifier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T00:19:24.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ItemModifier.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Modifiers\\ItemModifier.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\Modifiers\\ItemModifier.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Modifiers\\ItemModifier.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\Modifiers\\ItemModifier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T00:19:08.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "InstructionBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\InstructionBuilder.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\Builders\\InstructionBuilder.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\InstructionBuilder.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\Builders\\InstructionBuilder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T19:15:11.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IBuildStep.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\IBuildStep.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\Builders\\IBuildStep.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\IBuildStep.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\Builders\\IBuildStep.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T19:15:09.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "AddWeaponsStep.cs",
-              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\AddWeaponsStep.cs",
-              "RelativeDocumentMoniker": "AddWeaponsStep.cs",
-              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\AddWeaponsStep.cs",
-              "RelativeToolTip": "AddWeaponsStep.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\AddWeaponsStep.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\Builders\\AddWeaponsStep.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\AddWeaponsStep.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\Builders\\AddWeaponsStep.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-22T21:19:27.289Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Tile.cs",
-              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\Tile.cs",
-              "RelativeDocumentMoniker": "Tile.cs",
-              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\Tile.cs",
-              "RelativeToolTip": "Tile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 26,
+              "Title": "AddPathsStep.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\AddPathsStep.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\Builders\\AddPathsStep.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\AddPathsStep.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\Builders\\AddPathsStep.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-22T21:19:18.637Z",
+              "WhenOpened": "2026-04-09T19:15:04.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AddItemStep.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\AddItemStep.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\Builders\\AddItemStep.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\AddItemStep.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\Builders\\AddItemStep.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAACkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T21:19:28.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AddChambersStep.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\AddChambersStep.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\Builders\\AddChambersStep.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\AddChambersStep.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\Builders\\AddChambersStep.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T18:52:52.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AddCentralRoomStep.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\AddCentralRoomStep.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\Builders\\AddCentralRoomStep.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\AddCentralRoomStep.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\Builders\\AddCentralRoomStep.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T19:15:42.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IDungeonStrategy.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\Dungeon\\IDungeonStrategy.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\Builders\\Dungeon\\IDungeonStrategy.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\Dungeon\\IDungeonStrategy.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\Builders\\Dungeon\\IDungeonStrategy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T19:27:26.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "FilledDungeonStep.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\Dungeon\\FilledDungeonStep.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\Builders\\Dungeon\\FilledDungeonStep.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\Dungeon\\FilledDungeonStep.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\Builders\\Dungeon\\FilledDungeonStep.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T19:15:08.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "EmptyDungeonStep.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\Dungeon\\EmptyDungeonStep.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\Builders\\Dungeon\\EmptyDungeonStep.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\Dungeon\\EmptyDungeonStep.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\Builders\\Dungeon\\EmptyDungeonStep.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T21:19:30.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "DungeonGroundsStrategy.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\Dungeon\\DungeonGroundsStrategy.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\Builders\\Dungeon\\DungeonGroundsStrategy.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\Dungeon\\DungeonGroundsStrategy.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\Builders\\Dungeon\\DungeonGroundsStrategy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T19:27:27.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "DungeonBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\Dungeon\\DungeonBuilder.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\Builders\\Dungeon\\DungeonBuilder.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\Dungeon\\DungeonBuilder.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\Builders\\Dungeon\\DungeonBuilder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T19:27:28.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "AddEnemiesStep.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\Dungeon\\AddEnemiesStep.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\Items\\Builders\\Dungeon\\AddEnemiesStep.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\Items\\Builders\\Dungeon\\AddEnemiesStep.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\Items\\Builders\\Dungeon\\AddEnemiesStep.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T01:24:10.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "StealthAttack.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\combat\\StealthAttack.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\combat\\StealthAttack.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\combat\\StealthAttack.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\combat\\StealthAttack.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA1wBAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T00:10:31.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "MagicalAttack.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\combat\\MagicalAttack.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\combat\\MagicalAttack.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\combat\\MagicalAttack.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\combat\\MagicalAttack.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAswAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T00:10:44.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "CombatSystem.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\combat\\CombatSystem.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\combat\\CombatSystem.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\combat\\CombatSystem.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\combat\\CombatSystem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T00:10:59.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AttackStrategy.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\combat\\AttackStrategy.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\combat\\AttackStrategy.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\combat\\AttackStrategy.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\combat\\AttackStrategy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T00:10:05.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "KeyboardController.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Controllers\\KeyboardController.cs",
+              "RelativeDocumentMoniker": "World\\Controllers\\KeyboardController.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Controllers\\KeyboardController.cs",
+              "RelativeToolTip": "World\\Controllers\\KeyboardController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T19:32:42.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "NormalAttack.cs",
+              "DocumentMoniker": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\combat\\NormalAttack.cs",
+              "RelativeDocumentMoniker": "World\\Entities\\Core\\combat\\NormalAttack.cs",
+              "ToolTip": "C:\\Users\\bades\\project_salman_bade\\World\\Entities\\Core\\combat\\NormalAttack.cs",
+              "RelativeToolTip": "World\\Entities\\Core\\combat\\NormalAttack.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwCIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T00:10:17.014Z",
               "EditorCaption": ""
             }
           ]
