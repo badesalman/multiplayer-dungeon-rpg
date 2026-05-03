@@ -9,27 +9,9 @@
         {
         }
 
-        public override int GetWeaponDamageFor(Player player)
+        public override void Accept(IAttackVisitor visitor, Player player)
         {
-            return Damage
-                + player.GetCurrentWeaponDamageBonus()
-                + player.GetDexterity()
-                + player.GetLuck();
-        }
-
-        public override int GetNormalDefenseFor(Player player)
-        {
-            return player.GetDexterity() + player.GetLuck();
-        }
-
-        public override int GetStealthDefenseFor(Player player)
-        {
-            return player.GetDexterity();
-        }
-
-        public override int GetMagicalDefenseFor(Player player)
-        {
-            return player.GetLuck();
+            visitor.VisitLightWeapon(this, player);
         }
     }
 }

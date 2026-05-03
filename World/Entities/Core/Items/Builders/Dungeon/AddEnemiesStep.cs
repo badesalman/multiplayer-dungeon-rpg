@@ -1,4 +1,5 @@
-﻿using ConOOD_RpgGame.World.Entities.Core;
+﻿using ConOOD_RpgGame.World.Entities;
+using ConOOD_RpgGame.World.Entities.Core;
 using System;
 using System.Collections.Generic;
 
@@ -7,10 +8,12 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items.Builders
     public class AddEnemiesStep : IBuildStep
     {
         private readonly int enemyCount;
+        private readonly string enemyName;
 
-        public AddEnemiesStep(int enemyCount)
+        public AddEnemiesStep(int enemyCount, string enemyName)
         {
             this.enemyCount = enemyCount;
+            this.enemyName = enemyName;
         }
 
         public void Apply(World world, Random random)
@@ -42,7 +45,7 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items.Builders
                 {
                     Position pos = new Position(row, col);
 
-                    if (world.CanEnter(pos))
+                    if (world.CanEnter(pos) && !world.HasEnemyAt(pos))
                     {
                         result.Add(pos);
                     }
@@ -66,15 +69,15 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items.Builders
 
             if (choice == 0)
             {
-                return new Enemy(position, 30, 4, 2);
+                return new Enemy(position, 30, 4, 2, enemyName);
             }
 
             if (choice == 1)
             {
-                return new Enemy(position, 40, 5, 3);
+                return new Enemy(position, 40, 5, 3, enemyName);
             }
 
-            return new Enemy(position, 50, 6, 4);
+            return new Enemy(position, 50, 6, 4, enemyName);
         }
     }
 }

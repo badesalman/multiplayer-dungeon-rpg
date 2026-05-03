@@ -3,6 +3,8 @@ using ConOOD_RpgGame.World.Entities;
 using ConOOD_RpgGame.World.Entities.Core.combat;
 using ConOOD_RpgGame.World.Entities.Core.Items.Builders;
 using ConOOD_RpgGame.World.Entities.Core.Items.Builders.Dungeon;
+using ConOOD_RpgGame.World.Entities.Core.Items.Themes;
+using ConOOD_RpgGame.World.Entities.Core.Logging;
 using ConOOD_RpgGame.World.Entities.Core.Rendering;
 using ConOOD_RpgGame.World.Enums;
 using System;
@@ -18,15 +20,24 @@ namespace ConOOD_RpgGame.World.Entities.Core
         private readonly InstructionBuilder instructionBuilder;
         private readonly CombatSystem combatSystem;
         private string lastMessage;
-
-        public Game()
+        private readonly GameConfig config;
+        private readonly IDungeonTheme theme;
+        public Game(GameConfig config)
         {
+            this.config = config;
             world = new World();
-
             DungeonBuilder builder = new DungeonBuilder();
-            IDungeonStrategy strategy = new DungeonGroundsStrategy();
-            strategy.Configure(builder);
+
+          this.theme = DungeonThemeFactory.CreateRandomTheme();
+
+            theme.ConfigureDungeon(builder);
+
             builder.Build(world);
+            theme.AddThemeContent(world);
+
+            lastMessage = theme.GetIntroMessage();
+            GameLogger.Instance.Log($"Theme selected: {theme.GetThemeName()}");
+            
 
             Position startPosition = FindFirstPassablePosition(world);
             player = new Player(startPosition);
@@ -36,7 +47,7 @@ namespace ConOOD_RpgGame.World.Entities.Core
             instructionBuilder = new InstructionBuilder();
 
             combatSystem = new CombatSystem();
-            lastMessage = "Welcome to the game.";
+            lastMessage = theme.GetIntroMessage();
         }
 
         public void Run()
@@ -51,17 +62,24 @@ namespace ConOOD_RpgGame.World.Entities.Core
                 {
                     Console.Clear();
                     Console.WriteLine("GAME OVER - You died.");
+                    Console.WriteLine($"Log saved at: {GameLogger.Instance.GetLogFilePath()}");
                     Console.ReadKey();
                     isDead = true;
                     break;
                 }
-
+                //instructions are dynamic it will change according to theme 
                 string instructions = instructionBuilder.Build(world, player);
-                renderer.Render(world, player, instructions, lastMessage);
+
+                string themeLine =
+                    $"{theme.GetThemeName()} - {theme.GetIntroMessage()}";
+                renderer.Render(world, player, themeLine, instructions, lastMessage);
 
                 ConsoleKeyInfo keyInfo = Console.ReadKey(true);
-
-                if (keyInfo.Key == ConsoleKey.D1)
+                if (keyInfo.Key == ConsoleKey.J)
+                {
+                    ShowLogHistory();
+                }
+                else if (keyInfo.Key == ConsoleKey.D1)
                 {
                     lastMessage = TryAttackEnemy(new NormalAttack());
                 }
@@ -233,6 +251,21 @@ namespace ConOOD_RpgGame.World.Entities.Core
             Console.WriteLine("UR          -> unequip RIGHT hand");
             Console.WriteLine("Q           -> back");
             Console.WriteLine();
+        }
+        private void ShowLogHistory()
+        {
+            Console.Clear();
+            Console.WriteLine("=== EVENT LOG ===");
+            Console.WriteLine();
+
+            foreach (string log in GameLogger.Instance.GetRecentLogs(50))
+            {
+                Console.WriteLine(log);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Press any key to return...");
+            Console.ReadKey(true);
         }
     }
 }

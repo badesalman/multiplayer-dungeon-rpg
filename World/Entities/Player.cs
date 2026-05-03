@@ -90,19 +90,6 @@ public int GetCurrentWeaponDamageBonus()
             return !IsAlive;
         }
 
-        // WEAPON
-        
-        public Weapon GetEquippedWeapon()
-        {
-            if (RightHandItem != null && RightHandItem.AsWeapon() != null)
-                return RightHandItem.AsWeapon();
-
-            if (LeftHandItem != null && LeftHandItem.AsWeapon() != null)
-                return LeftHandItem.AsWeapon();
-
-            return null;
-        }
-
         private int GetEquippedItemBonus(System.Func<Item, int> selector)
         {
             int total = 0;
@@ -178,63 +165,65 @@ public int GetCurrentWeaponDamageBonus()
 
         public bool EquipItemDirectly(Item item, HandSide side, out string message)
         {
-            if (LeftHandItem == item || RightHandItem == item)
-            {
-                message = "Already equipped.";
-                return false;
-            }
 
-            Weapon weapon = item.AsWeapon();
-
-            if (weapon == null)
             {
-                message = "Item is not a weapon.";
-                return false;
-            }
-
-            if (weapon.IsTwoHanded)
-            {
-                if (LeftHandItem != null || RightHandItem != null)
+                if (LeftHandItem == item || RightHandItem == item)
                 {
-                    message = "Both hands must be empty.";
+                    message = "Already equipped.";
                     return false;
                 }
 
-                LeftHandItem = item;
+                if (!item.CanBeEquipped())
+                {
+                    message = "Item is not a weapon.";
+                    return false;
+                }
+
+                if (item.IsTwoHandedWeapon())
+                {
+                    if (LeftHandItem != null || RightHandItem != null)
+                    {
+                        message = "Both hands must be empty.";
+                        return false;
+                    }
+
+                    LeftHandItem = item;
+                    RightHandItem = item;
+                    message = $"{item.GetDisplayText()} equipped (two-handed).";
+                    return true;
+                }
+
+                if (HasTwoHandedWeaponEquipped())
+                {
+                    message = "Unequip two-handed weapon first.";
+                    return false;
+                }
+
+                if (side == HandSide.Left)
+                {
+                    if (LeftHandItem != null)
+                    {
+                        message = "Left hand occupied.";
+                        return false;
+                    }
+
+                    LeftHandItem = item;
+                    message = $"{item.GetDisplayText()} equipped (left).";
+                    return true;
+                }
+
+                if (RightHandItem != null)
+                {
+                    message = "Right hand occupied.";
+                    return false;
+                }
+
                 RightHandItem = item;
-                message = $"{item.GetDisplayText()} equipped (two-handed).";
+                message = $"{item.GetDisplayText()} equipped (right).";
                 return true;
             }
-
-            if (HasTwoHandedWeaponEquipped())
-            {
-                message = "Unequip two-handed weapon first.";
-                return false;
-            }
-
-            if (side == HandSide.Left)
-            {
-                if (LeftHandItem != null)
-                {
-                    message = "Left hand occupied.";
-                    return false;
-                }
-
-                LeftHandItem = item;
-                message = $"{item.GetDisplayText()} equipped (left).";
-                return true;
-            }
-
-            if (RightHandItem != null)
-            {
-                message = "Right hand occupied.";
-                return false;
-            }
-
-            RightHandItem = item;
-            message = $"{item.GetDisplayText()} equipped (right).";
-            return true;
         }
+        
         public bool EquipItem(int index, HandSide side, out string message)
         {
             if (index < 0 || index >= Inventory.Count)

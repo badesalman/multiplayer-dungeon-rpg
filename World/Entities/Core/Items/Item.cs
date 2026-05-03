@@ -74,9 +74,19 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items
             return 0;
         }
 
-        public virtual Weapon AsWeapon()
+        public virtual void Accept(IAttackVisitor visitor, Player player)
         {
-            return this as Weapon;
+            visitor.VisitItem(this, player);
         }
+        public virtual bool CanBeEquipped()
+        {
+            return false;
+        }
+
+        public virtual bool IsTwoHandedWeapon()
+        {
+            return false;
+        }
+
     }
 }

@@ -8,24 +8,9 @@
         {
         }
 
-        public override int GetWeaponDamageFor(Player player)
+        public override void Accept(IAttackVisitor visitor, Player player)
         {
-            return GetFinalBaseDamage() + player.GetStrength() + player.GetAggression();
-        }
-
-        public override int GetNormalDefenseFor(Player player)
-        {
-            return player.GetStrength() + player.GetLuck();
-        }
-
-        public override int GetStealthDefenseFor(Player player)
-        {
-            return player.GetStrength();
-        }
-
-        public override int GetMagicalDefenseFor(Player player)
-        {
-            return player.GetLuck();
+            visitor.VisitHeavyWeapon(this, player);
         }
     }
 }

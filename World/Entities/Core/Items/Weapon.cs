@@ -35,18 +35,19 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items
             return Damage + GetDamageBonus();
         }
 
-        public abstract int GetWeaponDamageFor(Player player);
-        public abstract int GetNormalDefenseFor(Player player);
-        public abstract int GetStealthDefenseFor(Player player);
-        public abstract int GetMagicalDefenseFor(Player player);
+        public abstract override void Accept(IAttackVisitor visitor, Player player);
         public int GetBaseDamage()
         {
             return Damage;
         }
-
-        public override Weapon AsWeapon()
+        public override bool CanBeEquipped()
         {
-            return this;
+            return true;
+        }
+
+        public override bool IsTwoHandedWeapon()
+        {
+            return IsTwoHanded;
         }
     }
 }

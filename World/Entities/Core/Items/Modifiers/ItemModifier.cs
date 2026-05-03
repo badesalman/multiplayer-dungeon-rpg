@@ -70,10 +70,19 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items.Modifiers
         {
             return BaseItem.GetDamageBonus();
         }
-
-        public override Weapon AsWeapon()
+        public override void Accept(IAttackVisitor visitor, Player player)
         {
-            return BaseItem.AsWeapon();
+            BaseItem.Accept(visitor, player);
         }
+        public override bool CanBeEquipped()
+        {
+            return BaseItem.CanBeEquipped();
+        }
+
+        public override bool IsTwoHandedWeapon()
+        {
+            return BaseItem.IsTwoHandedWeapon();
+        }
+
     }
 }

@@ -7,45 +7,28 @@ namespace ConOOD_RpgGame.World.Entities.Core.combat
     {
         public override string Name => "Stealth";
 
-        public override int CalculateDamage(Player player, Weapon weapon)
+        public override void VisitHeavyWeapon(HeavyWeapon weapon, Player player)
         {
-            if (weapon == null)
-            {
-                return GetDefaultDamageForNonWeapon();
-            }
-
-            // LIGHT damage x2
-            if (weapon is LightWeapon)
-            {
-                return weapon.GetWeaponDamageFor(player) * 2;
-            }
-
-            // HEAVYcsadece base damage /2
-            if (weapon is HeavyWeapon)
-            {
-                int baseDamage = weapon.GetBaseDamage();
-                int bonus = player.GetCurrentWeaponDamageBonus();
-
-                return (baseDamage + bonus) / 2;
-            }
-
-            // MAGICAL her zaman 1
-            if (weapon is MagicalWeapon)
-            {
-                return 1;
-            }
-
-            return 0;
+            damage = (player.GetStrength() + weapon.GetFinalBaseDamage()) / 2;
+            defense = player.GetStrength();
         }
 
-        public override int CalculateDefense(Player player, Weapon weapon)
+        public override void VisitLightWeapon(LightWeapon weapon, Player player)
         {
-            if (weapon == null)
-            {
-                return 0;
-            }
+            damage = (player.GetDexterity() + weapon.GetFinalBaseDamage()) * 2;
+            defense = player.GetDexterity();
+        }
 
-            return weapon.GetStealthDefenseFor(player);
+        public override void VisitMagicalWeapon(MagicalWeapon weapon, Player player)
+        {
+            damage = 1;
+            defense = 0;
+        }
+
+        public override void VisitItem(Item item, Player player)
+        {
+            damage = 0;
+            defense = 0;
         }
     }
 }

@@ -7,29 +7,28 @@ namespace ConOOD_RpgGame.World.Entities.Core.combat
     {
         public override string Name => "Magical";
 
-        public override int CalculateDamage(Player player, Weapon weapon)
+        public override void VisitHeavyWeapon(HeavyWeapon weapon, Player player)
         {
-            if (weapon == null)
-            {
-                return GetDefaultDamageForNonWeapon();
-            }
-
-            if (weapon is MagicalWeapon)
-            {
-                return weapon.GetWeaponDamageFor(player);
-            }
-
-            return 1;
+            damage = 1;
+            defense = player.GetLuck();
         }
 
-        public override int CalculateDefense(Player player, Weapon weapon)
+        public override void VisitLightWeapon(LightWeapon weapon, Player player)
         {
-            if (weapon == null)
-            {
-                return player.GetLuck();
-            }
+            damage = 1;
+            defense = player.GetLuck();
+        }
 
-            return weapon.GetMagicalDefenseFor(player);
+        public override void VisitMagicalWeapon(MagicalWeapon weapon, Player player)
+        {
+            damage = player.GetWisdom() + weapon.GetFinalBaseDamage();
+            defense = player.GetWisdom() * 2;
+        }
+
+        public override void VisitItem(Item item, Player player)
+        {
+            damage = 0;
+            defense = player.GetLuck();
         }
     }
 }

@@ -11,7 +11,7 @@
                 .AddStep(new AddChambersStep(5, 3, 6))
                 .AddStep(new AddItemsStep(8))
                 .AddStep(new AddWeaponsStep(5))
-            .AddStep(new AddEnemiesStep(4));
+            ;
         }
     }
 }

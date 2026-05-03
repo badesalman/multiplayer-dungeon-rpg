@@ -1,4 +1,7 @@
 ﻿using ConOOD_RpgGame.World.Entities;
+using ConOOD_RpgGame.World.Entities.Core.combat;
+using ConOOD_RpgGame.World.Entities.Core.Items;
+using ConOOD_RpgGame.World.Entities.Core.Logging;
 
 namespace ConOOD_RpgGame.World.Entities.Core.combat
 {
@@ -16,9 +19,11 @@ namespace ConOOD_RpgGame.World.Entities.Core.combat
                 return "Enemy is already defeated.";
             }
 
-            var weapon = player.GetEquippedWeapon();
+            Item equippedItem = player.GetEquippedCombatItem();
 
-            int rawPlayerDamage = attackStrategy.CalculateDamage(player, weapon);
+            attackStrategy.Execute(equippedItem, player);
+
+            int rawPlayerDamage = attackStrategy.Damage;
             int actualPlayerDamage = rawPlayerDamage - enemy.Armor;
 
             if (actualPlayerDamage < 0)
@@ -27,16 +32,17 @@ namespace ConOOD_RpgGame.World.Entities.Core.combat
             }
 
             enemy.ReceiveDamage(rawPlayerDamage);
+            GameLogger.Instance.Log($"Player dealt {actualPlayerDamage} damage.");
 
             string result = $"{attackStrategy.Name} attack dealt {actualPlayerDamage} damage.";
 
             if (!enemy.IsAlive)
             {
-                return result + " Enemy defeated.";
+                GameLogger.Instance.Log($"{enemy.Name} defeated.");
+                return result + $" {enemy.Name} defeated.";
             }
 
-            int playerDefense = attackStrategy.CalculateDefense(player, weapon);
-            int enemyDamage = enemy.Attack - playerDefense;
+            int enemyDamage = enemy.Attack - attackStrategy.Defense;
 
             if (enemyDamage < 0)
             {
@@ -45,11 +51,13 @@ namespace ConOOD_RpgGame.World.Entities.Core.combat
 
             player.ReceiveDamage(enemyDamage);
 
-            result += $" Enemy dealt {enemyDamage} damage back.";
+            GameLogger.Instance.Log($"{enemy.Name} dealt {enemyDamage} damage.");
 
-            if (player.IsDead())
+            result += $" {enemy.Name} dealt {enemyDamage} damage.";
+
+            if (!player.IsAlive)
             {
-                result += " You lost the game.";
+                result += " You died. Game over.";
             }
 
             return result;

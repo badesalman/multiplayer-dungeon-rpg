@@ -1,4 +1,5 @@
 ﻿using ConOOD_RpgGame.World.Entities.Core.Items;
+using ConOOD_RpgGame.World.Entities.Core.Logging;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,15 +8,20 @@ namespace ConOOD_RpgGame.World.Entities.Core.Rendering
 {
     public class Renderer
     {
-        public void Render(World world, Player player, string instructions, string message)
+        public void Render(World world, Player player, string themeLine, string instructions, string message)
         {
+            Console.Clear();
+            Console.SetCursorPosition(0, 0);
+
             StringBuilder sb = new StringBuilder();
-            int renderWidth = 110;
+            int renderWidth = 120;
 
             List<string> standingLines = WrapText(GetStandingItemText(world, player), 45, 2);
+            List<string> recentLogs = GameLogger.Instance.GetRecentLogs(5);
 
-            sb.AppendLine(PadLine("=== STAGE 3 RPG GAME ===", renderWidth));
-            sb.AppendLine(PadLine($"Controls: {instructions}", renderWidth));
+            sb.AppendLine(PadLine("=== STAGE 4 RPG GAME ===", renderWidth));
+            sb.AppendLine(PadLine(themeLine, renderWidth));
+            sb.AppendLine(PadLine(instructions, renderWidth));
             sb.AppendLine(PadLine(string.Empty, renderWidth));
 
             for (int row = 0; row < World.Rows; row++)
@@ -49,34 +55,37 @@ namespace ConOOD_RpgGame.World.Entities.Core.Rendering
                     line.Append(symbolToDraw);
                 }
 
+                // RIGHT PANEL
                 if (row == 0)
                     line.Append("    INVENTORY:");
-                else if (row >= 1 && row <= 8)
+                else if (row >= 1 && row <= 4)
                     line.Append(GetInventoryLine(player, row - 1));
-                else if (row == 10)
+                else if (row == 5)
                     line.Append($"    LEFT HAND : {GetHandText(player.LeftHandItem)}");
-                else if (row == 11)
+                else if (row == 6)
                     line.Append($"    RIGHT HAND: {GetHandText(player.RightHandItem)}");
-                else if (row == 13)
+                else if (row == 8)
                     line.Append("    STANDING ON:");
-                else if (row == 14)
+                else if (row == 9)
                     line.Append($"    {standingLines[0]}");
-                else if (row == 15)
+                else if (row == 10)
                     line.Append($"    {standingLines[1]}");
-                else if (row == 16)
+                else if (row == 12)
                     line.Append($"    STR:{player.GetStrength()} DEX:{player.GetDexterity()} HP:{player.GetCurrentHealth()}");
-                else if (row == 17)
+                else if (row == 13)
                     line.Append($"    LUCK:{player.GetLuck()} AGR:{player.GetAggression()} WIS:{player.GetWisdom()}");
-                else if (row == 18)
+                else if (row == 14)
                     line.Append($"    COINS:{player.Coins}  GOLD:{player.Gold}");
-                else if (row == 19)
+                else if (row == 15)
                     line.Append($"    MSG: {message}");
+                else if (row == 17)
+                    line.Append("    RECENT LOGS:");
+                else if (row >= 18 && row < 18 + recentLogs.Count)
+                    line.Append($"    {recentLogs[row - 18]}");
 
                 sb.AppendLine(PadLine(line.ToString(), renderWidth));
             }
 
-            Console.Clear();
-            Console.SetCursorPosition(0, 0);
             Console.Write(sb.ToString());
         }
 
