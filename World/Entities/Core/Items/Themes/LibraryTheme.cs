@@ -1,5 +1,6 @@
 ﻿using ConOOD_RpgGame.World.Entities.Core.Items.Builders;
 using ConOOD_RpgGame.World.Entities.Core.Items.Builders.Dungeon;
+using ConOOD_RpgGame.World.Entities.Core.Items.Modifiers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,8 +18,17 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items.Themes
             strategy.Configure(builder);
 
             // Theme farkı burada
-            builder.AddStep(new AddItemsStep(12));
-            builder.AddStep(new AddWeaponsStep(3));
+            builder.AddStep(new AddThemeItemsStep(
+    8,
+    new List<Func<Item>>
+    {
+        () => new JunkItem("Old Book", '?', "A dusty book full of forgotten knowledge."),
+        () => new JunkItem("Wisdom Scroll", '?', "A scroll that improves wisdom."),
+        () => new StrongModifier(
+            new MagicalWeapon("Ancient Wand", '*', "A magical library wand.",6,false)
+        )
+    }
+));
             builder.AddStep(new AddEnemiesStep(5, "Mage"));
         }
 

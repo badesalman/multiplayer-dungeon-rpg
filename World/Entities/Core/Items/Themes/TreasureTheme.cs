@@ -7,12 +7,23 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items.Themes
     {
         public void ConfigureDungeon(DungeonBuilder builder)
         {
+          
+        {
             IDungeonStrategy strategy = new DungeonGroundsStrategy();
             strategy.Configure(builder);
 
-            builder.AddStep(new AddItemsStep(20)); // çok gold
-            builder.AddStep(new AddEnemiesStep(4, "Living Safe"));
+            builder.AddStep(new AddThemeItemsStep(
+                15,
+                new List<Func<Item>>
+                {
+            () => new JunkItem("Coin", '$', "A small coin."),
+            () => new JunkItem("Gold", '$', "Shiny gold.")
+                }
+            ));
+
+            builder.AddStep(new AddEnemiesStep(4, "Angry Briefcase"));
         }
+    } 
         public string GetIntroMessage()
         {
             return "You feel an itch in your wallet.";
@@ -35,11 +46,13 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items.Themes
 
                 if (world.CanEnter(pos)) // boş ve yürünebilir
                 {
-                    var artifact = new ArtifactItem(
-                       "Lucky Coin Pouch",
-                       '$', 
-                       "A unique artifact of the Treasure dungeon."
-                    );
+                    Item artifact = new LightWeapon(
+    "Lucky Coin Pouch",
+    '$',
+    "A magical two-handed pouch filled with lucky coins.",
+    3,
+    true
+);
 
                     world.GetCell(pos).AddItem(artifact);
                     break;

@@ -1,5 +1,6 @@
 ﻿using ConOOD_RpgGame.World.Entities.Core.Items.Builders;
 using ConOOD_RpgGame.World.Entities.Core.Items.Builders.Dungeon;
+using ConOOD_RpgGame.World.Entities.Core.Items.Modifiers;
 
 namespace ConOOD_RpgGame.World.Entities.Core.Items.Themes
 {
@@ -10,7 +11,17 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items.Themes
             IDungeonStrategy strategy = new DungeonGroundsStrategy();
             strategy.Configure(builder);
 
-            builder.AddStep(new AddWeaponsStep(8));
+            builder.AddStep(new AddThemeItemsStep(
+    8,
+    new List<Func<Item>>
+    {
+        () => new JunkItem("Metal Fragment", '*', "A sharp piece of old metal."),
+        () => new JunkItem("Broken Gear", '*', "A broken mechanical part."),
+        () => new StrongModifier(
+            new HeavyWeapon("Iron Hammer", '*',"A heavy metal hammer.",6,false)
+        )
+    }
+));
             builder.AddStep(new AddEnemiesStep(6, "Cleaning Robot"));
         }
         public string GetIntroMessage()
