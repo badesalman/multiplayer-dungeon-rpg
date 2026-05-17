@@ -1,4 +1,5 @@
-﻿using ConOOD_RpgGame.World.Enums;
+﻿using ConOOD_RpgGame.World.Entities.Core.Items;
+using ConOOD_RpgGame.World.Enums;
 
 namespace ConOOD_RpgGame.World.Entities.Core.Items.Modifiers
 {
@@ -83,6 +84,9 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items.Modifiers
         {
             return BaseItem.IsTwoHandedWeapon();
         }
-
+        public override int GetNoiseRange()
+        {
+            return BaseItem.GetNoiseRange();
+        }
     }
 }

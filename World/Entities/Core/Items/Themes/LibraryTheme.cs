@@ -1,11 +1,12 @@
 ﻿using ConOOD_RpgGame.World.Entities.Core.Items.Builders;
-using ConOOD_RpgGame.World.Entities.Core.Items.Builders.Dungeon;
 using ConOOD_RpgGame.World.Entities.Core.Items.Modifiers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ConOOD_RpgGame.World.Entities.Core.Items;
+using ConOOD_RpgGame.World.Entities.Core.Items.Builders.Dungeon;
 
 namespace ConOOD_RpgGame.World.Entities.Core.Items.Themes
 {
@@ -29,7 +30,9 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items.Themes
         )
     }
 ));
-            builder.AddStep(new AddEnemiesStep(5, "Mage"));
+            builder.AddStep(new AddEnemiesStep(5, "Mage",'E'));
+            builder.AddStep(new AddEnemiesStep(2, "Goblin",'g'));
+            builder.AddStep(new AddEnemiesStep(2, "Skeleton",'s'));
         }
 
         public string GetIntroMessage()

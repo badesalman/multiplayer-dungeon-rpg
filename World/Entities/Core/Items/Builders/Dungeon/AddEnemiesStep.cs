@@ -1,19 +1,55 @@
-﻿using ConOOD_RpgGame.World.Entities;
-using ConOOD_RpgGame.World.Entities.Core;
+﻿using ConOOD_RpgGame.World.Entities.Core.Logging;
+using ConOOD_RpgGame.World.Entities.Core.Movement;
+using ConOOD_RpgGame.World.Entities.Core.Navigation;
+using ConOOD_RpgGame.World.Entities.Core.Species;
 using System;
 using System.Collections.Generic;
 
-namespace ConOOD_RpgGame.World.Entities.Core.Items.Builders
+namespace ConOOD_RpgGame.World.Entities.Core.Items.Builders.Dungeon
 {
     public class AddEnemiesStep : IBuildStep
     {
         private readonly int enemyCount;
         private readonly string enemyName;
+        private readonly char symbol;
+        private readonly SpeciesGroup speciesGroup;
+        private readonly IDeathReactionStrategy deathReactionStrategy;
+        private readonly DungeonNavigator navigator;
+        private readonly IMovementBehavior movementBehavior;
+        private readonly SoundManager soundManager;
 
-        public AddEnemiesStep(int enemyCount, string enemyName)
+        public AddEnemiesStep(
+            Player player,
+            int enemyCount,
+            string enemyName,
+            char symbol,
+            SpeciesGroup speciesGroup,
+            IDeathReactionStrategy deathReactionStrategy,
+            DungeonNavigator navigator,
+            IMovementBehavior movementBehavior,
+            SoundManager soundManager)
         {
             this.enemyCount = enemyCount;
             this.enemyName = enemyName;
+            this.symbol = symbol;
+            this.speciesGroup = speciesGroup;
+            this.deathReactionStrategy = deathReactionStrategy;
+            this.navigator = navigator;
+            this.movementBehavior = movementBehavior;
+            this.soundManager = soundManager;
+        }
+
+        public AddEnemiesStep(int enemyCount, string enemyName, char symbol)
+        {
+            this.enemyCount = enemyCount;
+            this.enemyName = enemyName;
+            this.symbol = symbol;
+
+            speciesGroup = new SpeciesGroup(enemyName);
+            deathReactionStrategy = new GoblinDeathReactionStrategy();
+            navigator = new DungeonNavigator();
+            movementBehavior = new RandomMovementBehavior();
+            soundManager = new SoundManager();
         }
 
         public void Apply(World world, Random random)
@@ -30,7 +66,7 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items.Builders
                     continue;
                 }
 
-                Enemy enemy = CreateRandomEnemy(pos, random);
+                Enemy enemy = CreateRandomEnemy(pos, random, world);
                 world.AddEnemy(pos, enemy);
             }
         }
@@ -63,21 +99,31 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items.Builders
             return pos;
         }
 
-        private Enemy CreateRandomEnemy(Position position, Random random)
+        private Enemy CreateRandomEnemy(Position position, Random random, World world)
         {
-            int choice = random.Next(3);
+            int health = random.Next(30, 51);
+            int attack = random.Next(4, 7);
+            int armor = random.Next(2, 5);
 
-            if (choice == 0)
-            {
-                return new Enemy(position, 30, 4, 2, enemyName);
-            }
+            Enemy enemy = new Enemy(
+                position,
+                health,
+                attack,
+                armor,
+                enemyName,
+                symbol,
+                deathReactionStrategy,
+                speciesGroup,
+                navigator,
+                movementBehavior,
+                world);
 
-            if (choice == 1)
-            {
-                return new Enemy(position, 40, 5, 3, enemyName);
-            }
+            enemy.SubscribeToSpecies();
+            soundManager.Subscribe(enemy);
 
-            return new Enemy(position, 50, 6, 4, enemyName);
+            GameLogger.Instance.Log($"{enemy.Name} subscribed to sound manager.");
+
+            return enemy;
         }
     }
 }

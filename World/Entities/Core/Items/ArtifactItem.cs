@@ -4,8 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using ConOOD_RpgGame.World.Entities.Core.Items;
-
 namespace ConOOD_RpgGame.World.Entities.Core.Items
 {
     public class ArtifactItem : Item

@@ -1,4 +1,6 @@
-﻿namespace ConOOD_RpgGame.World.Entities.Core.Items.Modifiers
+﻿using ConOOD_RpgGame.World.Entities.Core.Items;
+
+namespace ConOOD_RpgGame.World.Entities.Core.Items.Modifiers
 {
     public class StrongModifier : ItemModifier
     {

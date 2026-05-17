@@ -3,6 +3,7 @@
     public class HeavyWeapon : Weapon
     {
         protected override string WeaponTypeName => "Heavy";
+        public override int NoiseRange => 8; // Heavy
         public HeavyWeapon(string name, char symbol, string description, int damage, bool isTwoHanded)
             : base(name, symbol, description, damage, isTwoHanded)
         {

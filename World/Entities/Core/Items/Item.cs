@@ -1,5 +1,4 @@
-﻿using ConOOD_RpgGame.World.Entities;
-using ConOOD_RpgGame.World.Enums;
+﻿using ConOOD_RpgGame.World.Enums;
 
 namespace ConOOD_RpgGame.World.Entities.Core.Items
 {
@@ -86,6 +85,10 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items
         public virtual bool IsTwoHandedWeapon()
         {
             return false;
+        }
+        public virtual int GetNoiseRange()
+        {
+            return 0;
         }
 
     }

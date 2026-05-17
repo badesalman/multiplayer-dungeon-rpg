@@ -1,5 +1,4 @@
 ﻿using ConOOD_RpgGame.World.Entities;
-using ConOOD_RpgGame.World.Entities.Core.combat;
 using ConOOD_RpgGame.World.Entities.Core.Items;
 using ConOOD_RpgGame.World.Entities.Core.Logging;
 
@@ -38,6 +37,9 @@ namespace ConOOD_RpgGame.World.Entities.Core.combat
 
             if (!enemy.IsAlive)
             {
+                enemy.BroadcastDeath();
+                enemy.UnsubscribeFromSpecies();
+
                 GameLogger.Instance.Log($"{enemy.Name} defeated.");
                 return result + $" {enemy.Name} defeated.";
             }

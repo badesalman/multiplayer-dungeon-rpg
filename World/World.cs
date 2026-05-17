@@ -38,17 +38,48 @@ namespace ConOOD_RpgGame.World
                    position.Col >= 0 &&
                    position.Col < Cols;
         }
+        public Tile GetTile(int row, int col)
+        {
+            return cells[row, col].Ground;
+        }
+        public void MoveEnemy(Enemy enemy, Position newPosition)
+        {
+            if (!IsInside(newPosition))
+            {
+                return;
+            }
+
+            if (!CanEnter(newPosition))
+            {
+                return;
+            }
+
+            RemoveEnemy(enemy.Position);
+
+            AddEnemy(newPosition, enemy);
+        }
+
 
         public bool CanEnter(Position position)
         {
-            return GetCell(position).Ground.IsPassable;
-        }
+            Cell cell = GetCell(position);
 
+            if (cell == null)
+            {
+                return false;
+            }
+
+            return cell.Ground.IsPassable && !cell.HasEnemy();
+        }
         public Cell GetCell(Position position)
         {
+            if (!IsInside(position))
+            {
+                return null;
+            }
+
             return cells[position.Row, position.Col];
         }
-
         private void PlaceWall(int row, int col)
         {
             cells[row, col].Ground = new WallTile();
@@ -85,6 +116,11 @@ namespace ConOOD_RpgGame.World
 
         public void RemoveEnemy(Position position)
         {
+            if (!IsInside(position))
+            {
+                return;
+            }
+
             cells[position.Row, position.Col].Enemy = null;
         }
 

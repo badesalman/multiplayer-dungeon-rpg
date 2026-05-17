@@ -4,16 +4,17 @@ namespace ConOOD_RpgGame.World.Entities
 {
     public abstract class Character : MapEntity, IAttackable
     {
-        public int Health { get; protected set; }
-        public int Armor { get; protected set; }
-
+        public int Health { get;set; }
+        public int Armor { get;set; }
+        public int Attack { get; set; }
         public bool IsAlive => Health > 0;
 
-        protected Character(Position position, int health, int armor)
+        protected Character(Position position, int health, int armor, int attack)
             : base(position)
         {
             Health = health;
             Armor = armor;
+            Attack = attack;
         }
 
         public virtual void ReceiveDamage(int damage)

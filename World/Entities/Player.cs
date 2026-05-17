@@ -1,8 +1,10 @@
 ﻿using ConOOD_RpgGame.World.Entities.Core;
+using ConOOD_RpgGame.World.Entities.Core.combat.Events;
 using ConOOD_RpgGame.World.Entities.Core.Items;
+using ConOOD_RpgGame.World.Entities.Core.Logging;
 using ConOOD_RpgGame.World.Enums;
 using System.Collections.Generic;
-
+using System.Numerics;
 namespace ConOOD_RpgGame.World.Entities
 {
     public class Player : Character
@@ -22,9 +24,12 @@ namespace ConOOD_RpgGame.World.Entities
 
         public int Coins { get; private set; }
         public int Gold { get; private set; }
+        private readonly SoundManager soundManager;
 
-        public Player(Position startPosition)
-            : base(startPosition, 20, 0)
+        public Player(Position startPosition,
+    SoundManager soundManager)
+            : base(startPosition, 30,0
+                  , 0)
         {
             BaseStrength = 10;
             BaseDexterity = 8;
@@ -33,6 +38,8 @@ namespace ConOOD_RpgGame.World.Entities
             BaseWisdom = 9;
 
             Inventory = new List<Item>();
+            this.soundManager = soundManager;
+           
         }
 
         // STAT GETTERS (modifier destekli)
@@ -135,6 +142,16 @@ public int GetCurrentWeaponDamageBonus()
 
             Item item = cell.TakeTopItem();
             bool success = item.PickUp(this, out message);
+            GameLogger.Instance.Log($"Noise range test: {item.Name} = {item.GetNoiseRange()}");
+
+            if (success)
+            {
+                soundManager.BroadcastNoise(
+                    new NoiseEvent(
+                        Position,
+                        item.GetNoiseRange(),
+                        item.Name));
+            }
 
             if (!success)
                 cell.AddItem(item);

@@ -1,4 +1,5 @@
 ﻿using ConOOD_RpgGame.World.Entities.Core.Items.Builders;
+using ConOOD_RpgGame.World.Entities.Core.Items;
 using ConOOD_RpgGame.World.Entities.Core.Items.Builders.Dungeon;
 
 namespace ConOOD_RpgGame.World.Entities.Core.Items.Themes
@@ -21,8 +22,10 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items.Themes
                 }
             ));
 
-            builder.AddStep(new AddEnemiesStep(4, "Angry Briefcase"));
-        }
+            builder.AddStep(new AddEnemiesStep(4, "Angry Briefcase", 'E'));
+                builder.AddStep(new AddEnemiesStep(2, "Goblin", 'g'));
+                builder.AddStep(new AddEnemiesStep(2, "Skeleton", 's'));
+            }
     } 
         public string GetIntroMessage()
         {

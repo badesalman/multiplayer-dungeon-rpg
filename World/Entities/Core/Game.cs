@@ -1,13 +1,17 @@
 ﻿using ConOOD_RpgGame.World.Controllers;
 using ConOOD_RpgGame.World.Entities;
 using ConOOD_RpgGame.World.Entities.Core.combat;
-using ConOOD_RpgGame.World.Entities.Core.Items.Builders;
-using ConOOD_RpgGame.World.Entities.Core.Items.Builders.Dungeon;
-using ConOOD_RpgGame.World.Entities.Core.Items.Themes;
 using ConOOD_RpgGame.World.Entities.Core.Logging;
 using ConOOD_RpgGame.World.Entities.Core.Rendering;
 using ConOOD_RpgGame.World.Enums;
+using ConOOD_RpgGame.World.Entities.Core.Movement;
 using System;
+using ConOOD_RpgGame.World.Entities.Core.Items.Builders;
+using ConOOD_RpgGame.World.Entities.Core.Items.Themes;
+using ConOOD_RpgGame.World.Entities.Core.Items.Builders.Dungeon;
+using ConOOD_RpgGame.World.Entities.Core.Species;
+using ConOOD_RpgGame.World.Entities.Core.Navigation;
+using System.Collections.Generic;
 
 namespace ConOOD_RpgGame.World.Entities.Core
 {
@@ -22,13 +26,33 @@ namespace ConOOD_RpgGame.World.Entities.Core
         private string lastMessage;
         private readonly GameConfig config;
         private readonly IDungeonTheme theme;
+        private readonly SoundManager soundManager;
+
+        private readonly DungeonNavigator dungeonNavigator;
+
+        private readonly SpeciesGroup goblinGroup;
+
+        private readonly SpeciesGroup skeletonGroup;
         public Game(GameConfig config)
         {
             this.config = config;
+
+            soundManager = new SoundManager();
+
+            dungeonNavigator = new DungeonNavigator();
+
+            goblinGroup = new SpeciesGroup("Goblin");
+
+            skeletonGroup = new SpeciesGroup("Skeleton");
+
             world = new World();
+
             DungeonBuilder builder = new DungeonBuilder();
 
-          this.theme = DungeonThemeFactory.CreateRandomTheme();
+            this.theme = DungeonThemeFactory.CreateRandomTheme();
+
+
+            this.theme = DungeonThemeFactory.CreateRandomTheme();
 
             theme.ConfigureDungeon(builder);
 
@@ -40,7 +64,9 @@ namespace ConOOD_RpgGame.World.Entities.Core
             
 
             Position startPosition = FindFirstPassablePosition(world);
-            player = new Player(startPosition);
+            player = new Player(
+    startPosition,
+    soundManager);
 
             renderer = new Renderer();
             keyboardController = new KeyboardController(player, world, OpenInventoryMenu);
@@ -48,6 +74,7 @@ namespace ConOOD_RpgGame.World.Entities.Core
 
             combatSystem = new CombatSystem();
             lastMessage = theme.GetIntroMessage();
+           
         }
 
         public void Run()
@@ -99,10 +126,17 @@ namespace ConOOD_RpgGame.World.Entities.Core
                     {
                         running = false;
                     }
-                }
-            }
+                   
 
-            Console.Clear();
+                        MoveEnemiesRandomly();
+               
+
+                }
+
+
+                Console.Clear();
+                
+            }
             if (!isDead)
             {
                 Console.WriteLine("Game closed.");
@@ -251,6 +285,31 @@ namespace ConOOD_RpgGame.World.Entities.Core
             Console.WriteLine("UR          -> unequip RIGHT hand");
             Console.WriteLine("Q           -> back");
             Console.WriteLine();
+        }
+        private void MoveEnemiesRandomly()
+        {
+            List<Enemy> enemiesToMove = new List<Enemy>();
+
+            for (int row = 0; row < World.Rows; row++)
+            {
+                for (int col = 0; col < World.Cols; col++)
+                {
+                    Cell cell = world.GetCell(new Position(row, col));
+
+                    if (cell.HasEnemy())
+                    {
+                        enemiesToMove.Add(cell.Enemy);
+                    }
+                }
+            }
+
+            foreach (Enemy enemy in enemiesToMove)
+            {
+                if (enemy.IsAlive)
+                {
+                    enemy.MoveRandomly();
+                }
+            }
         }
         private void ShowLogHistory()
         {

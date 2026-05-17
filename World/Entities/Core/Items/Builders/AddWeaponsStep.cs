@@ -1,5 +1,5 @@
-﻿using ConOOD_RpgGame.World.Entities.Core;
-using ConOOD_RpgGame.World.Entities.Core.Items.Modifiers;
+﻿using ConOOD_RpgGame.World.Entities.Core.Items.Modifiers;
+using ConOOD_RpgGame.World.Entities.Core.Items;
 using System;
 using System.Collections.Generic;
 

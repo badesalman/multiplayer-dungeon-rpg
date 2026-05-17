@@ -1,6 +1,4 @@
-﻿using ConOOD_RpgGame.World.Entities;
-
-namespace ConOOD_RpgGame.World.Entities.Core.Items
+﻿namespace ConOOD_RpgGame.World.Entities.Core.Items
 {
     public class Coin : Item
     {

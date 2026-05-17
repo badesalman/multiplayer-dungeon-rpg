@@ -6,7 +6,11 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items
     {
         public int Damage { get; }
         public bool IsTwoHanded { get; }
+
+        public abstract int NoiseRange { get; }
+
         protected abstract string WeaponTypeName { get; }
+
         protected Weapon(string name, char symbol, string description, int damage, bool isTwoHanded)
             : base(name, symbol, description)
         {
@@ -25,6 +29,7 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items
             string handText = IsTwoHanded ? "Two-Handed" : "One-Handed";
             return $"{Name} [{WeaponTypeName}] - Damage: {Damage + GetDamageBonus()}, {handText}, {Description}";
         }
+
         public override bool TryEquip(Player player, HandSide handSide, out string message)
         {
             return player.EquipItemDirectly(this, handSide, out message);
@@ -36,10 +41,12 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items
         }
 
         public abstract override void Accept(IAttackVisitor visitor, Player player);
+
         public int GetBaseDamage()
         {
             return Damage;
         }
+
         public override bool CanBeEquipped()
         {
             return true;
@@ -48,6 +55,12 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items
         public override bool IsTwoHandedWeapon()
         {
             return IsTwoHanded;
+        }
+       
+
+        public override int GetNoiseRange()
+        {
+            return NoiseRange;
         }
     }
 }
