@@ -15,11 +15,11 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items.Themes
 
             builder.AddStep(new AddThemeItemsStep(
                 15,
-                new List<Func<Item>>
-                {
-            () => new JunkItem("Coin", '$', "A small coin."),
-            () => new JunkItem("Gold", '$', "Shiny gold.")
-                }
+              new List<Func<Item>>
+{
+    () => new Coin(1),
+    () => new Gold(1)
+}
             ));
 
             builder.AddStep(new AddEnemiesStep(4, "Angry Briefcase", 'E'));
