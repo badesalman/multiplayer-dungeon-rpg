@@ -33,6 +33,7 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items.Themes
             builder.AddStep(new AddEnemiesStep(5, "Mage",'E'));
             builder.AddStep(new AddEnemiesStep(2, "Goblin",'g'));
             builder.AddStep(new AddEnemiesStep(2, "Skeleton",'s'));
+            builder.AddStep(new AddSlotDemoItemsStep());
         }
 
         public string GetIntroMessage()

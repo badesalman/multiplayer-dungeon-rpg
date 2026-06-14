@@ -117,6 +117,7 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items.Builders.Dungeon
                 navigator,
                 movementBehavior,
                 world);
+            ConfigureStage7Behaviour(enemy);
 
             enemy.SubscribeToSpecies();
             soundManager.Subscribe(enemy);
@@ -124,6 +125,23 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items.Builders.Dungeon
             GameLogger.Instance.Log($"{enemy.Name} subscribed to sound manager.");
 
             return enemy;
+     
+        }
+        private void ConfigureStage7Behaviour(Enemy enemy)
+        {
+            if (enemyName == "Skeleton")
+            {
+                enemy.SetAggressiveBehaviour();
+                return;
+            }
+
+            if (enemyName == "Goblin")
+            {
+                enemy.SetCowardlyBehaviour();
+                return;
+            }
+
+            enemy.SetNeutralBehaviour();
         }
     }
 }

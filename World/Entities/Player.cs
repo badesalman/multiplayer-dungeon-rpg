@@ -28,7 +28,7 @@ namespace ConOOD_RpgGame.World.Entities
 
         public Player(Position startPosition,
     SoundManager soundManager)
-            : base(startPosition, 30,0
+            : base(startPosition, 80,0
                   , 0)
         {
             BaseStrength = 10;
@@ -173,6 +173,11 @@ public int GetCurrentWeaponDamageBonus()
 
             Inventory.RemoveAt(index);
             world.GetCell(Position).AddItem(item);
+            soundManager.BroadcastNoise(
+    new NoiseEvent(
+        Position,
+        item.GetNoiseRange(),
+        item.Name));
 
             message = $"{item.Name} dropped.";
             return true;

@@ -31,6 +31,7 @@ namespace ConOOD_RpgGame.World.Entities.Core.combat
             }
 
             enemy.ReceiveDamage(rawPlayerDamage);
+            enemy.OnAttacked();
             GameLogger.Instance.Log($"Player dealt {actualPlayerDamage} damage.");
 
             string result = $"{attackStrategy.Name} attack dealt {actualPlayerDamage} damage.";

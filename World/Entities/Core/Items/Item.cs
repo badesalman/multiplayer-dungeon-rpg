@@ -86,6 +86,10 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items
         {
             return false;
         }
+        public virtual bool CanBePlacedInSlot()
+        {
+            return false;
+        }
         public virtual int GetNoiseRange()
         {
             return 0;

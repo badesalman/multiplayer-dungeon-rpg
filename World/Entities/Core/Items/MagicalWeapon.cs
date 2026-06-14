@@ -3,9 +3,16 @@
     public class MagicalWeapon : Weapon
     {
         protected override string WeaponTypeName => "Magical";
-        public override int NoiseRange => 5; // Magical
-        public MagicalWeapon(string name, char symbol, string description, int damage, bool isTwoHanded)
-            : base(name, symbol, description, damage, isTwoHanded)
+        public override int NoiseRange => 5;
+
+        public MagicalWeapon(
+            string name,
+            char symbol,
+            string description,
+            int damage,
+            bool isTwoHanded,
+            int slotCount = 0)
+            : base(name, symbol, description, damage, isTwoHanded, slotCount)
         {
         }
 

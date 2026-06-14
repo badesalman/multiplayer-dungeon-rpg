@@ -24,7 +24,7 @@ namespace ConOOD_RpgGame.Model
         private readonly IDungeonTheme theme;
         public ConOOD_RpgGame.World.World World { get; }
         public Dictionary<int, Player> Players { get; }
-
+        private bool gameOver;
         public MultiplayerGameModel()
         {
             soundManager = new SoundManager();
@@ -100,6 +100,11 @@ namespace ConOOD_RpgGame.Model
         {
             lock (modelLock)
             {
+                if (gameOver)
+                {
+                    lastMessage = "Game Over.";
+                    return;
+                }
                 if (!Players.ContainsKey(playerId))
                 {
                     lastMessage = "Unknown player.";
@@ -112,27 +117,27 @@ namespace ConOOD_RpgGame.Model
                 if (action == "UP")
                 {
                     player.Move(World, -1, 0, out message);
-                    MoveEnemiesRandomly();
+                    MoveEnemies();
                 }
                 else if (action == "DOWN")
                 {
                     player.Move(World, 1, 0, out message);
-                    MoveEnemiesRandomly();
+                    MoveEnemies();
                 }
                 else if (action == "LEFT")
                 {
                     player.Move(World, 0, -1, out message);
-                    MoveEnemiesRandomly();
+                    MoveEnemies();
                 }
                 else if (action == "RIGHT")
                 {
                     player.Move(World, 0, 1, out message);
-                    MoveEnemiesRandomly();
+                    MoveEnemies();
                 }
                 else if (action == "PICKUP")
                 {
                     player.PickUpTopItem(World, out message);
-                    MoveEnemiesRandomly();
+                    MoveEnemies();
                 }
                 else if (action == "INVENTORY")
                 {
@@ -145,17 +150,17 @@ namespace ConOOD_RpgGame.Model
                 else if (action == "ATTACK_NORMAL")
                 {
                     message = TryAttackEnemy(player, new NormalAttack());
-                    MoveEnemiesRandomly();
+                    MoveEnemies();
                 }
                 else if (action == "ATTACK_STEALTH")
                 {
                     message = TryAttackEnemy(player, new StealthAttack());
-                    MoveEnemiesRandomly();
+                    MoveEnemies();
                 }
                 else if (action == "ATTACK_MAGICAL")
                 {
                     message = TryAttackEnemy(player, new MagicalAttack());
-                    MoveEnemiesRandomly();
+                    MoveEnemies();
                 }
                 else
                 {
@@ -249,25 +254,59 @@ namespace ConOOD_RpgGame.Model
 
         private string TryAttackEnemy(Player player, AttackStrategy strategy)
         {
-            Cell cell = World.GetCell(player.Position);
+            Enemy enemy = FindAdjacentEnemy(player);
 
-            if (!cell.HasEnemy())
+            if (enemy == null)
             {
-                return "There is no enemy here.";
+                return "There is no enemy nearby.";
             }
 
-            Enemy enemy = cell.Enemy;
             string result = combatSystem.ExecuteTurn(player, enemy, strategy);
+
+            if (!player.IsAlive)
+            {
+                Console.Clear();
+                Console.WriteLine("GAME OVER");
+                Environment.Exit(0);
+            }
 
             if (!enemy.IsAlive)
             {
-                World.RemoveEnemy(player.Position);
+                World.RemoveEnemy(enemy.Position);
             }
 
             return result;
         }
 
-        private void MoveEnemiesRandomly()
+        private Enemy FindAdjacentEnemy(Player player)
+        {
+            List<Position> positions = new List<Position>
+    {
+        player.Position.Offset(-1, 0),
+        player.Position.Offset(1, 0),
+        player.Position.Offset(0, -1),
+        player.Position.Offset(0, 1)
+    };
+
+            foreach (Position position in positions)
+            {
+                if (!World.IsInside(position))
+                {
+                    continue;
+                }
+
+                Cell cell = World.GetCell(position);
+
+                if (cell.HasEnemy())
+                {
+                    return cell.Enemy;
+                }
+            }
+
+            return null;
+        }
+
+        private void MoveEnemies()
         {
             List<Enemy> enemiesToMove = new List<Enemy>();
 
@@ -288,7 +327,17 @@ namespace ConOOD_RpgGame.Model
             {
                 if (enemy.IsAlive)
                 {
-                    enemy.MoveRandomly();
+                    enemy.TakeTurn(Players.Values);
+
+                    foreach (Player player in Players.Values)
+                    {
+                        if (!player.IsAlive)
+                        {
+                            gameOver = true;
+                            lastMessage = "Game Over.";
+                            return;
+                        }
+                    }
                 }
             }
         }
