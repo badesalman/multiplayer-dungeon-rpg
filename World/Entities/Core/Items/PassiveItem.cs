@@ -31,7 +31,7 @@
             return true;
         }
 
-        public override int GetStrengthBonus()
+        public override int GetStrengthBonus()//for example stat bonus 
         {
             return strength;
         }

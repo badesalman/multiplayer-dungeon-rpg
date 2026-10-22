@@ -115,3 +115,6 @@ namespace ConOOD_RpgGame.World.Entities.Core.Items
         }
     }
 }
+
+//the holder recursively calculates bonuses from all cotained items ( foreach döngüsüyle) 
+//items can be interted into the holders
